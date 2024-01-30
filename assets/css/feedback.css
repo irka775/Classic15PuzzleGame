@@ -1,2 +1,29 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-image: url('../images/bg-game2.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    margin: 0;
+    padding: 40px;
+
+}
+
+#content {
+    margin-top: 200px;
+    margin-left: 100px;
+    text-align: center;
+    padding: 50px;
+
+    background-color: none;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: #ee82ee;
+}
+
 
 
