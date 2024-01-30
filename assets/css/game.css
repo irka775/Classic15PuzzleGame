@@ -98,7 +98,45 @@ p {
     /* Subtle shadow for depth */
 }
 
+#back-button {
+    text-decoration: none;
+}
+
+#pause-button:hover,
+#shuffle-button:hover,
+#back-button:hover {
+    color: #b57edc;
+    background-color: #fff;
+}
 
 
 
 
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    p {
+        font-size: 20px;
+    }
+
+    #game-field {
+        width: 210px;
+        /* Increased width for smaller screens */
+        height: 210px;
+        /* Increased height to maintain aspect ratio */
+    }
+
+    .cell {
+        padding: 13px;
+        border-radius: 10px;
+        width: 20px;
+        /* Adjusted width for smaller screens */
+        height: 20px;
+        /* Adjusted height for smaller screens */
+        font-size: 30px;
+        /* Increased font size for better readability */
+    }
+
+
+}
