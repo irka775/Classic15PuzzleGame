@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>15 Puzzle Game</title>
+
+    <!-- Meta tags for search engines-->
+    <meta name="description" content="Play the classic 15 Puzzle game. Arrange the tiles in order!">
+    <meta name="keywords" content="15 Puzzle, Puzzle Game, Brain Game, Fun, Game">
+    
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+</head>
+
+<body>
+    <!-- Instructions for the game -->
+    <p>Move cells in the grid to order them from <b>1 to 15.</b></p>
+
+    <!-- Game field where the puzzle will be displayed -->
+    <div id="game-field"></div>
+
+    <!-- Display the number of moves and timer -->
+    <div id="nav-buttons">
+        <p id="moves">Moves:</p>
+        <p id="timer">Timer: 0</p>
+    </div>
+
+    <!-- Button to pause the game -->
+    <button id="pause-button">Pause</button>
+
+    <!-- Button to start/restart the game -->
+    <button id="shuffle-button">Shuffle</button>
+
+    <!-- Button to navigate back to the home page -->
+    <button id="back-button" onclick="window.location.href='index.html';">Home</button>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
