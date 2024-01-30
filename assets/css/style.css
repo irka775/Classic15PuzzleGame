@@ -1,2 +1,23 @@
+/* Set the font family for the entire page */
+body {
+    font-family: 'Pacifico', cursive;
+    background-image: url('../images/bg-game.avif'); /* Background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Styling for the main container */
+#main-container {
+    text-align: center;
+    padding: 100px;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 80px;
+    color:#ee82ee; /* Text color */
+}
+
 
 
