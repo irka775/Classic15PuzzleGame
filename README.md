@@ -323,7 +323,7 @@ For a detailed breakdown and to understand more about what each metric means,
 
   The site was deployed to GitHub pages. The steps to deploy are as follows:
 
- **Step 1:** Creating New Repository and giving a name (Classic15game) on my GitHub  account.
+ **Step 1:** Creating New Repository and giving a name (Classic15PuzzleGame) on my GitHub  account.
  Make my repository public.Open a terminal on your computer.
 
  **Step 2:**  Open vs code on my computer and open new terminal and 
