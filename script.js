@@ -116,6 +116,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Event listener for the pause button
+    pauseButton.addEventListener('click', function () {
+        pauseGame(); // Pause the game when the button is clicked
+    });
 
+    // Event listener for the game field to resume the timer when a cell is clicked
+    gameField.addEventListener('click', function () {
+        resumeGame(); // Resume the game when any cell is clicked
+    });
+
+
+    // Initial setup for the game
+    drawCells();
 });
 
