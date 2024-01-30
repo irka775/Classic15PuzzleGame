@@ -25,5 +25,30 @@ p {
     color: #ee82ee;
 }
 
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.rating label {
+    font-size: 120px;
+    cursor: pointer;
+    color: #f7d22e;
+}
+
+.rating label:hover,
+.rating label:hover~label,
+.rating input:checked~label {
+    color: #ff00ff;
+}
+
+.rating input {
+    display: none;
+}
+
+#rate {
+    margin-top: 20px;
+}
 
