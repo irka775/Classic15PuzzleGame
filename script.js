@@ -14,7 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
     // Array of light colors for cell backgrounds
     const lightColors = [/* array of color hex codes */];
 
- 
+    // Function to update move counter display
+    function updateMoves() {
+        document.getElementById('moves').innerHTML = "Moves: " + movesCount;
+    }
+
+    // Function to format and update the timer display
+    function updateTimer() {
+        let formattedTime = "Timer: " + (min < 10 ? "0" : "") + min + ':' + (sec < 10 ? "0" : "") + sec;
+        document.getElementById('timer').innerHTML = formattedTime;
+    }
+
+    // Timer function to increment time and update display
+    function timer() {
+        sec++;
+        if (sec == 60) {
+            sec = 0;
+            min++;
+        }
+        updateTimer();
+    }
+
 
 
 
