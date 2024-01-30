@@ -86,8 +86,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Event listener for the shuffle button
+    shuffleButton.addEventListener('click', function () {
+        gameStarted = true;
+        movesCount = 0;
+        sec = 0;
+        min = 0;
+        updateMoves();
+        updateTimer();
+        clearInterval(timerInterval); // Clear existing timer interval
+        timerInterval = setInterval(timer, 1000); // Start new timer interval
+        shuffle(cells.map(cell => cell.innerHTML));
+        drawCells();
+    });
 
+    // Custom function to pause the timer
+    function pauseGame() {
+        if (gameStarted) {
+            clearInterval(timerInterval); // Pause the timer
+            gameStarted = false; // Update game state to paused
+        }
+    }
 
+    // Custom function to resume the timer
+    function resumeGame() {
+        if (!gameStarted) {
+            timerInterval = setInterval(timer, 1000); // Resume the timer
+            gameStarted = true; // Update game state to resumed
+        }
+    }
 
 
 });
