@@ -51,6 +51,41 @@ document.addEventListener('DOMContentLoaded', function () {
         return (Math.abs(x - emptyX) + Math.abs(y - emptyY) === 1);
     }
 
+    // Function to shift a cell and update game state
+    function shiftCell(index) {
+        if (canMove(index)) {
+            const emptyIndex = cells.findIndex(cell => cell.innerHTML === '');
+            [cells[index].innerHTML, cells[emptyIndex].innerHTML] = [cells[emptyIndex].innerHTML, cells[index].innerHTML];
+            cells[index].style.backgroundColor = lightColors[emptyIndex];
+            cells[emptyIndex].style.backgroundColor = '#B57EDC';
+            movesCount++;
+            updateMoves();
+        }
+    }
+
+    // Function to create and display cells on the game field
+    function drawCells() {
+        gameField.innerHTML = ''; // Clear the field
+        cells = [];
+
+        // Create an array of numbers for the cells
+        let cellNumbers = Array.from({ length: axleSize * axleSize - 1 }, (_, i) => i + 1);
+        shuffle(cellNumbers);
+        cellNumbers.push(''); // Add an empty string to represent the empty cell
+
+        cellNumbers.forEach((number, i) => {
+            let cell = document.createElement('div');
+            cell.className = 'cell';
+            cell.innerHTML = number;
+            cell.style.backgroundColor = number ? lightColors[i] : '#B57EDC';
+            gameField.appendChild(cell);
+            cells.push(cell);
+
+            // Add click event to each cell
+            cell.addEventListener('click', () => shiftCell(i));
+        });
+    }
+
 
 
 
