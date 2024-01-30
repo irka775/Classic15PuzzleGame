@@ -35,6 +35,21 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTimer();
     }
 
+    // Function to shuffle the array for initial game setup
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    // Function to check if a cell can be moved
+    function canMove(index) {
+        const emptyIndex = cells.findIndex(cell => cell.innerHTML === '');
+        const x = index % axleSize, y = Math.floor(index / axleSize);
+        const emptyX = emptyIndex % axleSize, emptyY = Math.floor(emptyIndex / axleSize);
+        return (Math.abs(x - emptyX) + Math.abs(y - emptyY) === 1);
+    }
 
 
 
