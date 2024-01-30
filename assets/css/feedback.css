@@ -52,3 +52,32 @@ p {
     margin-top: 20px;
 }
 
+#submit-button {
+    font-family: 'Pacifico', cursive;
+
+    padding: 10px 20px;
+    font-size: 40px;
+    background-color: #d6b4fc;
+    color: #ff00ff;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #ff00ff;
+    border-radius: 5px;
+}
+
+
+
+/* Style for the links */
+a {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #ff00ff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
