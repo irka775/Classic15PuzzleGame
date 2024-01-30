@@ -329,7 +329,7 @@ For a detailed breakdown and to understand more about what each metric means,
  **Step 2:**  Open vs code on my computer and open new terminal and 
 clone the repository using the command:
 
- "git clone https://github.com/irka775/Classic15game.git".
+ "git clone https://github.com/irka775/Classic15PuzzleGame.git".
  
 
   **Step 3:** Create HTML,CSS and others files and folders necessary for the game into the main local repository directory.
