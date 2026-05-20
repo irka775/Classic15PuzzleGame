@@ -394,3 +394,6 @@ Planned Adjustments: I am in the process of making further
   
 
 This project is released under an open source license.
+
+---
+Educational project — see [FAMILY_USE.md](FAMILY_USE.md).
