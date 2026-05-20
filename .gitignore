@@ -14,3 +14,7 @@ staticfiles/
 venv/
 __pycache__/
 *.pyc
+.vscode/
+cloudinary_python.txt
+cloudinary_python.txt.env
+*.sqlite3
